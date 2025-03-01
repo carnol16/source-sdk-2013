@@ -1494,8 +1494,10 @@ bool CBaseObject::ShouldBeMiniBuilding( CTFPlayer* pPlayer )
 
 	if ( TFGameRules()->GameModeUsesUpgrades() )
 	{
-		if ( pPlayer->GetNumObjects( OBJ_SENTRYGUN ) && pPlayer->CanBuild( OBJ_SENTRYGUN ) == CB_CAN_BUILD && !IsCarried() )
-			return true;	
+		// EWWWW!!!! I HATE MINI SENTRIES ICKYYYYYY!!!!!
+		//if ( pPlayer->GetNumObjects( OBJ_SENTRYGUN ) && pPlayer->CanBuild( OBJ_SENTRYGUN ) == CB_CAN_BUILD && !IsCarried() )
+		//	return true;	
+		return false;
 	}
 
 	if ( !pWrench->IsPDQ() )

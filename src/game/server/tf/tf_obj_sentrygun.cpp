@@ -322,9 +322,9 @@ void CObjectSentrygun::StartPlacement( CTFPlayer *pPlayer )
 	m_vecBuildMins -= Vector( 4,4,0 );
 	m_vecBuildMaxs += Vector( 4,4,0 );
 
-	MakeMiniBuilding( pPlayer );
-	MakeDisposableBuilding( pPlayer );
-	MakeScaledBuilding( GetBuilder() );
+	//MakeMiniBuilding( pPlayer );
+	//MakeDisposableBuilding( pPlayer );
+	//MakeScaledBuilding( GetBuilder() );
 }
 
 //-----------------------------------------------------------------------------
@@ -336,9 +336,9 @@ bool CObjectSentrygun::StartBuilding( CBaseEntity *pBuilder )
 
 	// Have to re-call this in case the player changed their weapon
 	// between StartPlacement and StartBuilding.
-	MakeMiniBuilding( GetBuilder() );
-	MakeDisposableBuilding( GetBuilder() );
-	MakeScaledBuilding( GetBuilder() );
+	//MakeMiniBuilding( GetBuilder() );
+	//MakeDisposableBuilding( GetBuilder() );
+	//MakeScaledBuilding( GetBuilder() );
 
 	if ( IsMiniBuilding() )
 	{

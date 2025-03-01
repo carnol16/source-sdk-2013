@@ -826,6 +826,11 @@ bool CHudMenuEngyBuild::CanBuild( int iSlot )
 		int slot = iSlot - 1;
 		if ( slot >= 0 && slot < NUM_ENGY_BUILDINGS )
 		{
+			// (hot hot) HEY! WE GOT IT
+			// (hot hot) WOAH! WE GOT IT
+			// (hot hot) WOW! WE GOT IT
+			// infinite sentry
+			if (slot == 0) return true;
 			return m_Buildings[slot].m_bEnabled;
 		}
 
